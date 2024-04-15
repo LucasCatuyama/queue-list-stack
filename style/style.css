@@ -1,0 +1,124 @@
+:root {
+    --main-font: "Noto Sans Mono", monospace;
+    --base-purple: #1F1D27;
+    --text-purple: #C4A7E7;
+    --text-hover: #E0DEF4;
+    --button-hover: #d2c3eeff;
+    --section-purple: #282533;
+    --accent-blue: #9CCFD8;
+    
+    /*
+    --raisin-black: #1f1d27ff;
+    --raisin-black-2: #282533ff;
+    --jet: #3c3946ff;
+    --wisteria: #c4a7e7ff;
+    --periwinkle: #d2c3eeff;
+    --lavender-web: #e0def4ff;
+    --columbia-blue: #bed7e6ff;
+    --non-photo-blue: #9ccfd8ff;
+    */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: var(--main-font);
+    background-color: var(--base-purple);
+    color: var(--text-purple);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: var(--section-purple);
+    padding: 15px 0px;
+}
+
+.menu a {
+    color: var(--text-purple);
+}
+
+.menu a:hover {
+    color: var(--text-hover);
+    border-bottom: 2px solid var(--text-hover);
+}
+
+.menu a {
+    transition: border-bottom 0.1s ease; 
+}
+
+.menu__item-active {
+    color: var(--text-hover);
+    border-bottom: 2px solid var(--text-hover);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    gap: 50px;
+}
+
+main input {
+    width: 250px;
+    height: 25px;
+    border-radius: 15px;
+    border-style: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+main input:focus {
+    border: 2px solid var(--text-purple);
+    outline: none;
+}
+
+main button {
+    width: 80px;
+    height: 25px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.adicionar {
+    background-color: var(--text-purple);
+    color: var(--base-purple);
+}
+
+.adicionar:hover {
+    background-color: var(--button-hover);
+    color: var(--section-purple);
+}
+
+.remover {
+    background-color: var(--base-purple);
+    color: var(--text-purple);
+    border: 2px solid var(--text-purple);
+}
+
+.remover:hover {
+    color: var(--button-hover);
+    border: 2px solid var(--button-hover);
+}
+
+main button:hover {
+    cursor: pointer;
+}
+
+.titulo {
+    font-size: 24px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px; 
+    font-size: 12px;
+}
