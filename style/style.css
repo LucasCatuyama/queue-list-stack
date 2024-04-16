@@ -25,6 +25,7 @@ body {
     font-family: var(--main-font);
     background-color: var(--base-purple);
     color: var(--text-purple);
+    font-family: var(--main-font);
 }
 
 .menu {
@@ -72,8 +73,8 @@ main input {
 }
 
 main input:focus {
-    border: 2px solid var(--text-purple);
-    outline: none;
+    border: none;
+    outline: 2px solid var(--text-purple);
 }
 
 main button {
@@ -110,6 +111,22 @@ main button:hover {
 
 .titulo {
     font-size: 24px;
+}
+
+div#displayArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px; 
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid var(--text-purple); 
+    border-radius: 20px;
+    width: 80%; 
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--base-purple); 
 }
 
 footer {
