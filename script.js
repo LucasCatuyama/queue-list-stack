@@ -15,6 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    const originalPlaceholder = inputElement.placeholder;
+
+    inputElement.addEventListener('mousedown', function(){
+        inputElement.placeholder = "";
+    });
+
+    inputElement.addEventListener('blur', function(){
+        inputElement.placeholder = originalPlaceholder;
+    });
+
     if (urlAtual.includes('fila-home.html')) {
         const fila = [];
         addButton.onclick = function() {
